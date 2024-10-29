@@ -23,10 +23,10 @@ import LoanManagementSystemFifthImage from "../assets/projects/LoanManagementSys
 import MetroGPS from "../assets/projects/Metro.png";
 import MetroGpsSecondImage from "../assets/projects/Metro-2.png";
 import MetroGpsThirdImage from "../assets/projects/Metro-3.png";
-import IWork from "../assets/projects/I-Work-1.png";
-import IWorkSecondImage from "../assets/projects/I-Work-2.png";
-import IWorkThirdImage from "../assets/projects/I-Work-3.png";
-import IWorkFourthImage from "../assets/projects/I-Work-4.png";
+import IWork from "../assets/projects/I-WORK-1.png";
+import IWorkSecondImage from "../assets/projects/I-WORK-2.png";
+import IWorkThirdImage from "../assets/projects/I-WORK-3.png";
+import IWorkFourthImage from "../assets/projects/I-WORK-4.png";
 import EDukasyon from "../assets/projects/EDUKASYON-1.png";
 import EDukasyonSecondImage from "../assets/projects/EDUKASYON-2.png";
 import EDukasyonThirdImage from "../assets/projects/EDUKASYON-3.png";
