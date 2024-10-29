@@ -1,4 +1,4 @@
-import aboutImg from "../assets/projects/profile.jfif"
+import aboutImg from "../assets/projects/Profile.png"
 import { ABOUT_TEXT } from "../constants"
 import { motion } from "framer-motion"
 
