@@ -24,9 +24,10 @@ const Hero = () => {
                         Hello, I am
                     </motion.h1>
                     <motion.span 
-                    variants={container(0.5)} 
-                    initial="hidden" animate="visible" 
-                    className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-5xl tracking-tight text-transparent">
+                        variants={container(0.5)} 
+                        initial="hidden" 
+                        animate="visible" 
+                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-5xl tracking-tight text-transparent text-center lg:text-left">
                         Antonio Montilla
                     </motion.span>
                     <motion.span 

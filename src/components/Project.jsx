@@ -40,6 +40,7 @@ const Project = () => {
                 width={275} 
                 height={300} 
                 alt={project.title} 
+                className="pr-4 pb-2"
               />
               <Modal 
                 open={openModals[index]} 
@@ -57,11 +58,15 @@ const Project = () => {
                     <h6 className="mb-2 font-semibold">{project.title}</h6>
                     <span className="text-sm text-purple-400">Development Period: {project.year}</span>
                     <p className="mb-4 text-neutral-400">{project.description}</p>
+                    <div className="flex flex-wrap">
                     {project.technologies.map((tech, index) => (
-                        <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 ">
-                            {tech}
+                      <div key={index} className="mr-2 pb-2">
+                        <span className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">
+                          {tech}
                         </span>
+                      </div>
                     ))}
+                  </div>
                 </motion.div>
             </div>
         ))}

@@ -42,30 +42,30 @@ export default function Modal({ open, setOpen, images, title, link }) {
               </div>
             </div>
 
-            {/* Modal Footer */}
-            <div className="bg-gray-50 px-4 py-3 flex flex-col sm:flex-row sm:justify-end sm:px-6">
-              <div className="mt-4 flex w-full justify-center space-y-2 sm:space-y-0 sm:space-x-3 sm:w-auto">
-              {link !== "#" && (
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 transition-colors duration-300"
-                >
-                  Visit Website
-                </a>
-              )}
+           {/* Modal Footer */}
+           <div className="bg-gray-50 px-4 py-3 flex flex-col sm:flex-row sm:justify-end sm:px-6">
+            <div className="flex flex-col w-full items-center gap-2 sm:flex-row sm:justify-end sm:gap-3 sm:w-auto">
+                {link !== "#" && (
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto inline-flex justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 transition-colors duration-300"
+                    >
+                        Visit Website
+                    </a>
+                )}
 
                 <button
-                  type="button"
-                  onClick={() => setOpen(false)}
-                  className="inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 transition-colors duration-300"
-                  aria-label="Close modal"
+                    type="button"
+                    onClick={() => setOpen(false)}
+                    className="w-full sm:w-auto inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 transition-colors duration-300"
+                    aria-label="Close modal"
                 >
-                  Close
+                    Close
                 </button>
-              </div>
             </div>
+        </div>
           </DialogPanel>
         </div>
       </div>

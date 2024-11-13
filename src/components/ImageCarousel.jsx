@@ -2,30 +2,23 @@ import { useEffect, useState, useRef } from 'react';
 
 export default function ImageCarousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [pause, setPause] = useState(false); // State to track manual interaction
-    const timeoutRef = useRef(null); // Ref to store timeout for resuming auto-scroll
+    const [pause, setPause] = useState(false);
+    const timeoutRef = useRef(null);
 
     useEffect(() => {
-        // Set interval for auto-scrolling if not paused
         const interval = !pause && setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000); // Change image every 3 seconds
+        }, 3000);
 
-        // Cleanup interval on component unmount or when pause changes
         return () => clearInterval(interval);
     }, [images.length, pause]);
 
     const handleUserInteraction = (nextIndex) => {
-        // Set current index based on interaction (next or previous)
         setCurrentIndex(nextIndex);
-
-        // Pause auto-scroll for 5 seconds
         setPause(true);
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
         }
-
-        // Resume auto-scroll after 5 seconds of inactivity
         timeoutRef.current = setTimeout(() => {
             setPause(false);
         }, 5000);
@@ -42,7 +35,7 @@ export default function ImageCarousel({ images }) {
     };
 
     return (
-        <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+        <div className="relative w-full max-w-3xl mx-auto overflow-hidden border-4 border-gray-600 bg-gray-800 rounded-lg">
             <div
                 className="flex transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -62,7 +55,7 @@ export default function ImageCarousel({ images }) {
                 onClick={goToPrevious}
                 className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white rounded-full p-2 opacity-75 hover:opacity-100"
             >
-                &#10094; {/* Left arrow symbol */}
+                &#10094;
             </button>
 
             {/* Right Arrow */}
@@ -70,15 +63,15 @@ export default function ImageCarousel({ images }) {
                 onClick={goToNext}
                 className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white rounded-full p-2 opacity-75 hover:opacity-100"
             >
-                &#10095; {/* Right arrow symbol */}
+                &#10095;
             </button>
 
-            {/* Optional: Dots to show current image */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            {/* Dots outside the carousel */}
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 mt-4 mb-6">
                 {images.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-green-500' : 'bg-gray-300'}`}
+                        className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-green-500' : 'bg-gray-400'}`}
                         onClick={() => handleUserInteraction(index)}
                     ></button>
                 ))}

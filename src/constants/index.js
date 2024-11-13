@@ -139,5 +139,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Pampanga Philippines",
   // phoneNo: "+12 4555 666 00 ",
-  email: "tonsmontilla@gmail.com",
+  // email: "tonsmontilla@gmail.com",
 };
