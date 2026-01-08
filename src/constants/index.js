@@ -38,7 +38,25 @@ import Booking from "../assets/projects/Booking.png";
 import BookingSecondImage from "../assets/projects/Booking-1.png";
 import BookingThirdImage from "../assets/projects/Booking-2.png";
 import BookingFourthImage from "../assets/projects/Booking-3.png";
-import Locus from "../assets/projects/Locus.png";
+import ResearchSystem from "../assets/projects/research-system.png";
+import ResearchSystemSecondImage from "../assets/projects/research-system-1.png";
+import ResearchSystemThirdImage from "../assets/projects/research-system-2.png";
+import ResearchSystemFourthImage from "../assets/projects/research-system-3.png";
+import ResearchSystemFifthImage from "../assets/projects/research-system-4.png";
+import ResearchSystemSixImage from "../assets/projects/research-system-5.png";
+import StalwartImage from "../assets/projects/stalwart-1.png";
+import CemeteryImage from "../assets/projects/cemetery-1.png";
+import CemeteryImageLogin from "../assets/projects/cemetery-login.png";
+import CemeterySecondImage from "../assets/projects/cemetery-2.png";
+import CemeteryThirdImage from "../assets/projects/cemetery-3.png";
+import CemeteryFourthImage from "../assets/projects/cemetery-4.png";
+import CemeteryFifthImage from "../assets/projects/cemetery-5.png";
+import CemeterySixImage from "../assets/projects/cemetery-6.png";
+import CemeterySevenImage from "../assets/projects/cemetery-7.png";
+import CMSImage from "../assets/projects/cms-1.png";
+import CMSSecondImage from "../assets/projects/cms-2.png";
+import CMSThirdImage from "../assets/projects/cms-3.png";
+import CMSFourthImage from "../assets/projects/cms-4.png";
 
 export const HERO_CONTENT = `
 I am a passionate junior backend developer with two years of experience in crafting robust and scalable web applications using technologies like Laravel API (Laravel 10, Eloquent, and the Laravel API Toolkit), MySQL, Node.js, Express, and MongoDB, and I also build applications with WordPress, Elementor, Elementor Pro, WooCommerce, and WCFM multi-vendor, aiming to leverage my skills to design innovative solutions that drive business growth and enhance user experiences.`;
@@ -106,14 +124,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Locus",
-    year: "January 2025 - Ongoing development",
-    image: [Locus],
+    title: "Stalwart",
+    year: "October 2025 - Ongoing development",
+    image: [StalwartImage],
     link: "#",
     description:
-      "Locus is a system designed to support RDF’s research team in identifying optimal locations for new store establishments. It streamlines data collection, analysis, and decision-making by prioritizing research-driven insights before finalizing store locations.",
+      "Research System is a system designed to support RDF’s research team in identifying optimal locations for new store establishments. It streamlines data collection, analysis, and decision-making by prioritizing research-driven insights before finalizing store locations.",
     technologies: [
-      "Laravel 11",
+      "Laravel 12",
       "Reverb",
       "REST API",
       "PHP",
@@ -123,28 +141,66 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "RDF Main Canteen",
-    year: "May 2024 - Ongoing development",
+    title: "Freelance Project – Providence Memorial Cemetery Mapping System",
+    year: "January 2025 - April 2025",
     image: [
-      RdfCanteen,
-      RdfCanteenSecondImage,
-      RdfCanteenThirdImage,
-      RdfCanteenFourthImage,
-      RdfCanteenFifthImage,
+      CemeteryImageLogin,
+      CemeteryImage,
+      CemeterySecondImage,
+      CemeteryThirdImage,
+      CemeteryFourthImage,
+      CemeteryFifthImage,
+      CemeterySixImage,
+      CemeterySevenImage,
     ],
     link: "#",
     description:
-      "This project is designed to streamline the canteen ordering process for RDF Feed, Livestock & Foods, Inc employees. It allows employees to place orders directly from the canteen and track their purchase history. The system also manages employee orders efficiently, ensuring smooth operations and real-time monitoring of purchases. Built with WooCommerce and WCFM multi-vendor, it integrates seamlessly with the WordPress environment to offer a complete e-commerce solution.",
+      "The Providence Memorial Cemetery Mapping System is a comprehensive solution for efficiently managing and mapping cemetery plots. It features real-time chat support, lot and deceased navigation for easy tracking, record management, and real-time lot reservation. With an intuitive interface and powerful search functionality, the system improves operational efficiency and enhances the experience for both staff and visitors.",
     technologies: [
-      "HTML",
-      "CSS",
-      "WordPress",
+      "Laravel 12",
+      "Reverb",
+      "REST API",
       "PHP",
       "mySQL",
-      "WooCommerce",
-      "WCFM multi-vendor",
-      "Elementor",
-      "Elementor Pro",
+      "Laravel API Toolkit",
+      "Postman",
+      "React JS",
+      "Redux",
+      "Leaflet",
+      "CSS",
+    ],
+  },
+  {
+    title: "Freelance Project – Water Station Management System",
+    year: "May 2025 - December 2025",
+    image: [CMSImage, CMSSecondImage, CMSThirdImage, CMSFourthImage],
+    link: "#",
+    description:
+      "The Water Station Management System is a comprehensive solution for efficiently managing water station operations. It features real-time notifications for meter readings, allows customers to pay in advance, and provides admin users with tools to track payments, monitor sales, and manage customer records. With an intuitive interface and robust reporting functionality, the system streamlines operations and enhances the experience for both customers and staff.",
+    technologies: ["PHP", "CSS", "Bootstrap", "mySQL", "Javascript"],
+  },
+  {
+    title: "Research System",
+    year: "January 2025 - September 2025",
+    image: [
+      ResearchSystem,
+      ResearchSystemSecondImage,
+      ResearchSystemThirdImage,
+      ResearchSystemFourthImage,
+      ResearchSystemFifthImage,
+      ResearchSystemSixImage,
+    ],
+    link: "https://research-system.rdfmis.com/",
+    description:
+      "Research System is a system designed to support RDF’s research team in identifying optimal locations for new store establishments. It streamlines data collection, analysis, and decision-making by prioritizing research-driven insights before finalizing store locations.",
+    technologies: [
+      "Laravel 11",
+      "Reverb",
+      "REST API",
+      "PHP",
+      "mySQL",
+      "Laravel API Toolkit",
+      "Postman",
     ],
   },
   {
@@ -208,7 +264,7 @@ export const PROJECTS = [
     technologies: ["Node JS", "Express", "Multer", "MongoDB", "Postman"],
   },
   {
-    title: "Loan Management System",
+    title: "Freelance Project – Loan Management System",
     year: "November 2023 - January 2024",
     image: [
       LoanManagementSystem,
@@ -223,7 +279,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "mySQL"],
   },
   {
-    title: "I-Work",
+    title: "Freelance Project – Task Management System",
     year: "May 2023 - November 2023",
     image: [IWork, IWorkSecondImage, IWorkThirdImage, IWorkFourthImage],
     link: "#",
@@ -232,7 +288,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "mySQL"],
   },
   {
-    title: "Booking Management System",
+    title: "Freelance Project – Booking Management System",
     year: "January 2023 - May 2023",
     image: [Booking, BookingSecondImage, BookingThirdImage, BookingFourthImage],
     link: "#",
@@ -241,7 +297,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "mySQL"],
   },
   {
-    title: "E-DUKASYON",
+    title: "Capstone Project - E-DUKASYON",
     year: "May 2022 - November 2022",
     image: [
       EDukasyon,
@@ -262,5 +318,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Philippines",
   // phoneNo: "+12 4555 666 00 ",
-  // email: "tonsmontilla@gmail.com",
+  email: "montillaantoniowork@gmail.com",
 };
